@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+.sidebar {
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #ececec;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.sidebar a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    color:#3d1b1b;
+    text-align:start;
+}
+.sidebar a:hover {
+    background-color: #d0d0d0;
+}
+.logout {
+    margin-top: auto;
+    padding-bottom: 20px;
+}
+.container {
+    margin-left: 260px;
+    padding: 20px;
+}
+.sidebar a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    object-fit: contain;
+}
+.container {
+    width: calc(100% - 260px);
+    max-width: 900px;
+    margin: 60px auto 20px;
+    padding: 20px;
+    background: #ececec;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-left: 260px;
+}
+
+h2 {
+    text-align: center;
+    color: #222;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+input, select {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+h3 {
+    color: #d9534f;
+}
+
+button[style*="background-color: red"] {
+    background: #d9534f;
+}
+
+button[style*="background-color: red"]:hover {
+    background: #c9302c;
+}

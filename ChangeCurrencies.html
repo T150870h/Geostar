@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Images/planet-earth.png" type="image/png">
+    <link rel="stylesheet" href="./ChangeCurrencies.css">
+    <link rel="stylesheet" href="./theme.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="./JSI.html"><img src="./Images/Home.png" alt="">Home</a>
+        <a href="./ChangeCurrencies.html"><img src="./Images/Currency.png" alt="">Change Currencies</a>
+        <a href="./Credit.html"><img src="./Images/Contact.png" alt="">Contact</a>
+        <div class="logout">
+            <a href="./Signup.html"><img src="./Images/Logout.png" alt="">Logout</a>
+            <a href="./settings.html"><img src="./Images/Settings.png" alt="">Settings</a>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Currency Converter</h2>
+        <div class="converter">
+            <input type="number" id="amount" placeholder="Enter amount">
+            <select id="fromCurrency"></select>
+            <span>to</span>
+            <select id="toCurrency"></select>
+            <div class="buttons">
+                <button onclick="convertCurrency()"class="convert"><img src="./Images/convert.png" alt="" class="imgp">Convert</button>
+                <button onclick="swap()" class="swap"><img src="./Images/swap.png" alt="" class="imgp">Swap</button>
+                <button onclick="clearLine()" class="clear"><img src="./Images/Clear.png" alt="" class="imgp">Clear</button>
+            </div>
+            
+        </div>
+        <h5 class="note"></h5>
+        <div class="res">
+            <h4 class=".text-top-left">Output</h4>
+            <p id="result"></p>
+        </div>
+        
+    </div>
+
+    <script src="./ChangeCurrencies.js"></script>
+    <script src="common.js"></script>
+    
+</body>
+</html>

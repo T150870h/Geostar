@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Images/planet-earth.png" type="image/png">
+    <link rel="stylesheet" href="./settings.css">
+    <link rel="stylesheet" href="./theme.css">
+    <title>Settings</title>
+</head>
+
+<body id="Settings">
+    <div class="sidebar">
+        <a href="./JSI.html"><img src="./Images/Home.png" alt="">Home</a>
+        <a href="./ChangeCurrencies.html"><img src="./Images/Currency.png" alt="">Change Currencies</a>
+        <a href="./Credit.html"><img src="./Images/Contact.png" alt="">Contact</a>
+        <div class="logout">
+            <a href="./Signup.html"><img src="./Images/Logout.png" alt="">Logout</a>
+            <a href="#"><img src="./Images/Settings.png" alt="">Settings</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Settings</h2>
+
+        <!-- 1. Username -->
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter new username">
+            <button id="username-btn">Change</button>
+            <div class="userver"></div>
+        </div>
+
+        <!-- 2. Password -->
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter new password">
+            <button id="password-btn">Change</button>
+        </div>
+
+        <!-- 7. Delete Account -->
+        <div>
+            <h3>Danger Zone</h3>
+            <button style="background-color: red; color: white;">Delete Account</button>
+        </div>
+
+        <!-- 8. Theme -->
+        <div>
+            <label for="theme">Select Theme:</label>
+            <select id="theme">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+            <button id="theme-btn">Apply</button>
+        </div>
+    </div>
+
+    <script src="settings.js"></script>
+    <script src="common.js"></script>
+</body>
+
+</html>
+

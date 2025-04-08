@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Images/planet-earth.png" type="image/png">
+    <title>RestCountries API</title>
+    <link rel="stylesheet" href="JSI.css">
+    <link rel="stylesheet" href="./theme.css">
+</head>
+<body id="JSI">
+    <div class="sidebar">
+        <h3 id="usernameDisplay">User: </h3> <!-- Username Display -->
+        <a href="./JSI.html"><img src="./Images/Home.png" alt="">Home</a>
+        <a href="./ChangeCurrencies.html"><img src="./Images/Currency.png" alt="">Change Currencies</a>
+        <a href="./Credit.html"><img src="./Images/Contact.png" alt="">Contact</a>
+        <div class="logout">
+            <a href="./index.html"><img src="./Images/Logout.png" alt="">Logout</a>
+            <a href="./Settings.html"><img src="./Images/Settings.png" alt="">Settings</a>
+        </div>
+    </div>
+    <div class="container">
+        <h2 id="Home">Search for a Country</h2>
+        <input type="text" id="countryInput" placeholder="Enter country name" oninput="filterCountries()">
+        <div class="regionSelect">
+            <select id="regionSelect" onchange="filterByRegion()">
+                <option value="">All Regions</option>
+                <option value="Africa">Africa</option>
+                <option value="Americas">Americas</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+                <option value="Antarctic">Antarctic</option>
+            </select>
+        </div>
+        
+        <div class="sort-controls">
+            <label for="sortSelect">Sort:</label>
+            <select id="sortSelect" onchange="handleSortChange()">
+                <option value="">Sort by...</option>
+                <option value="popAsc">Population ↑</option>
+                <option value="popDesc">Population ↓</option>
+                <option value="areaAsc">Area ↑</option>
+                <option value="areaDesc">Area ↓</option>
+            </select>
+        </div>
+        
+        <div id="result"></div>
+    </div>
+    
+    <script src="JSI.js"></script>
+    <script src="common.js"></script>
+</body>
+</html>

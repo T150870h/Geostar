@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #ececec;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    color: #3d1b1b;
+    text-align: start;
+}
+
+.sidebar a:hover {
+    background-color: #d0d0d0;
+}
+
+.logout {
+    margin-top: auto;
+    padding-bottom: 20px;
+}
+
+.sidebar a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    object-fit: contain;
+}
+
+.container {
+    margin-left: 245px;
+    width: calc(100% - 300px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding-top: 20px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.converter {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+input, select {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    width: 120px;
+    font-size: 16px;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    justify-content:center;
+    margin:0 5px 0;
+}
+
+.clear {
+    background-color: #dc3545;
+    border: 1px solid #a71d2a;
+}
+
+.convert {
+    background-color: #007bff;
+    border: 1px solid #0056b3;
+}
+
+.swap{
+    background-color: #28a745;
+    border: 1px solid #1e7e34;
+}
+.swap:hover{
+    background-color: #218838;
+    border: 1px solid #1c7430;
+
+}
+
+button:hover {
+    transform: scale(1.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.convert:hover {
+    background-color: #0056b3;
+}
+
+.clear:hover {
+    background-color: #b3001b;
+}
+
+p {
+    font-size: 20px;
+}
+
+.res {
+    position: relative;
+    padding: 0 50px 0;
+    height: 100px;
+    min-width: 150px;
+    background-color: #cfcfcf;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.text-top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.note {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+}
+.imgp {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    vertical-align: middle; /* Aligns image to text */
+}

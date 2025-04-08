@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Images/planet-earth.png" type="image/png">
+    <link rel="stylesheet" href="./Login.css">
+    <link rel="stylesheet" href="./theme.css">
+    <title>Login</title>
+</head>
+<body id="Credential">
+    <div class="main-container">
+        <div class="left-container">
+            <div class="container">
+                <h2 class="comment">Welcome back! Log in to continue.</h2>
+                <form id="loginForm">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="Enter your email" id="email"> <!-- Changed to text -->
+                
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter your password" id="password">
+                
+                    <button type="submit" id="submit">Login</button>
+                </form>
+                
+                <!-- 🔹 Message container -->
+                <div id="messageContainer"></div>
+                
+                <a href="./Signup.html" class="signup-link">Don't have an account? Sign up</a>
+                
+            </div>
+        </div>
+        <div class="right-container">
+        </div>
+    </div>
+    <script type="module" src="Login.js"></script>
+    <script src="common.js"></script>
+</body>
+</html>

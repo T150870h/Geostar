@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Images/planet-earth.png" type="image/png">
+    <link rel="stylesheet" href="./Signup.css">
+    <link rel="stylesheet" href="./theme.css">
+    <title>Signup</title>
+</head>
+<body id="Credential">
+    <div class="main-container">
+        <div class="left-container">
+            <div class="container">
+                <h2 class="comment">Sign up for a better experience!</h2>
+                <form id="signupForm">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="Enter your email" id="email">
+                
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username">
+                
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter your password" id="password">
+
+                    <label for="confPassword">Confirm password</label>
+                    <input type="password" placeholder="Confirm your password" id="confPassword">
+
+                    <button type="submit" id="submit">Sign up</button>
+                </form>
+
+                <!-- 🔹 Thêm div rỗng để hiển thị thông báo -->
+                <div id="messageContainer"></div>
+
+                <a href="./index.html" class="signup-link">Already have an account?</a>
+            </div>
+        </div>
+        <div class="right-container"></div>
+    </div>
+    <script type="module" src="Signup.js"></script>  <!-- ✅ Sửa tên file -->
+    <script src="common.js"></script>
+</body>
+</html>
